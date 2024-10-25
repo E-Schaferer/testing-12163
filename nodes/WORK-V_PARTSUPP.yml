@@ -21,7 +21,7 @@ operation:
         config: {}
         dataType: NUMBER
         description: ""
-        name: DIM_PARTSUPP_KEY
+        name: DIM_PARTSUPP_KEY_PARTSUPP
         nullable: true
         sourceColumnReferences:
           - columnReferences:
