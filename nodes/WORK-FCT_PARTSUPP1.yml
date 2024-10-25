@@ -1,0 +1,239 @@
+fileVersion: 1
+id: acd33bdb-0774-4ba8-8075-65279bd8474a
+name: FCT_PARTSUPP1
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: WORK
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c0650d64-b7f0-44a2-8de0-b7a1b759bd50
+          stepCounter: acd33bdb-0774-4ba8-8075-65279bd8474a
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: DIM_PARTSUPP_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e373e68c-152f-4845-87bb-c0f0d8f44bf9
+                stepCounter: 96c8acbc-c485-486b-ba25-fce853ead05e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 926b0378-3682-4204-b9e6-d26c9448ab87
+          stepCounter: acd33bdb-0774-4ba8-8075-65279bd8474a
+        config: {}
+        dataType: NUMBER(38,0)
+        description: Foreign Key to P_PARTKEY
+        name: PS_PARTKEY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f6e2cf6c-0c9d-4e90-bf9c-dbb415db91e4
+                stepCounter: 96c8acbc-c485-486b-ba25-fce853ead05e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c78694cc-a6e1-415e-8f31-0719dcb4b38d
+          stepCounter: acd33bdb-0774-4ba8-8075-65279bd8474a
+        config: {}
+        dataType: NUMBER(38,0)
+        description: Foreign Key to S_SUPPKEY
+        name: PS_SUPPKEY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ad2d6386-bc0b-47e8-b205-384465478a78
+                stepCounter: 96c8acbc-c485-486b-ba25-fce853ead05e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 434bb678-9001-4e12-82f2-b0714ee25c3e
+          stepCounter: acd33bdb-0774-4ba8-8075-65279bd8474a
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PS_AVAILQTY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0c519937-ee4c-4f15-b7d6-8c1d20110a4c
+                stepCounter: 96c8acbc-c485-486b-ba25-fce853ead05e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d0fb7d95-76ec-4960-adad-f8bf905bd5f3
+          stepCounter: acd33bdb-0774-4ba8-8075-65279bd8474a
+        config: {}
+        dataType: NUMBER(12,2)
+        description: ""
+        name: PS_SUPPLYCOST
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 008c619a-f8af-4bbd-915d-741b56af7f15
+                stepCounter: 96c8acbc-c485-486b-ba25-fce853ead05e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 86eb0447-41fc-4843-9bd4-34b1e132437b
+          stepCounter: acd33bdb-0774-4ba8-8075-65279bd8474a
+        config: {}
+        dataType: VARCHAR(199)
+        description: ""
+        name: PS_COMMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2db74ddc-732a-4959-9134-ca7e7c1e9c19
+                stepCounter: 96c8acbc-c485-486b-ba25-fce853ead05e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a606874c-e341-4a2f-b274-5666abc72d17
+          stepCounter: acd33bdb-0774-4ba8-8075-65279bd8474a
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: SYSTEM_VERSION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 33f58346-5337-4e70-93a2-a07b5791124e
+                stepCounter: 96c8acbc-c485-486b-ba25-fce853ead05e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1edeaf9d-7da3-4a58-8b91-27a3e5f00c55
+          stepCounter: acd33bdb-0774-4ba8-8075-65279bd8474a
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: SYSTEM_CURRENT_FLAG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8749986f-27e3-4cf8-a0bb-50293a99ed4e
+                stepCounter: 96c8acbc-c485-486b-ba25-fce853ead05e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bab00003-f2f4-4b8e-b762-566aa30f346f
+          stepCounter: acd33bdb-0774-4ba8-8075-65279bd8474a
+        config: {}
+        dataType: TIMESTAMP
+        description: ""
+        name: SYSTEM_START_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 73206baf-b508-4426-9f13-c21b527e5e75
+                stepCounter: 96c8acbc-c485-486b-ba25-fce853ead05e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 33f27dec-a4f1-43d7-b98d-659a1dac12e0
+          stepCounter: acd33bdb-0774-4ba8-8075-65279bd8474a
+        config: {}
+        dataType: TIMESTAMP
+        description: ""
+        name: SYSTEM_END_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d9ddf90e-0d08-4b58-8fd8-14f46d0cd518
+                stepCounter: 96c8acbc-c485-486b-ba25-fce853ead05e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 98afdfd7-67e6-416b-9061-43ad785a1f22
+          stepCounter: acd33bdb-0774-4ba8-8075-65279bd8474a
+        config: {}
+        dataType: TIMESTAMP
+        description: ""
+        name: SYSTEM_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9093840a-d0f1-4726-a2e2-9c7a77e2d483
+                stepCounter: 96c8acbc-c485-486b-ba25-fce853ead05e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4fe1471b-eabf-44e9-9ac8-d530480649c3
+          stepCounter: acd33bdb-0774-4ba8-8075-65279bd8474a
+        config: {}
+        dataType: TIMESTAMP
+        description: ""
+        name: SYSTEM_UPDATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d4a1c2a4-33c3-42d5-8561-2b2578381be6
+                stepCounter: 96c8acbc-c485-486b-ba25-fce853ead05e
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c632bcbc-f9d5-4102-bf78-bcaf04c950db
+          stepCounter: acd33bdb-0774-4ba8-8075-65279bd8474a
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: SYSTEM_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0fcdd629-7204-4b63-9329-6ad639208e2f
+          stepCounter: acd33bdb-0774-4ba8-8075-65279bd8474a
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: SYSTEM_UPDATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: WORK
+            nodeName: V_PARTSUPP1
+        join:
+          joinCondition: FROM {{ ref('WORK', 'V_PARTSUPP1') }} "V_PARTSUPP1"
+        name: FCT_PARTSUPP1
+        noLinkRefs: []
+  name: FCT_PARTSUPP1
+  overrideSQL: false
+  schema: ""
+  sqlType: Fact
+  type: sql
+  version: 1
+type: Node
